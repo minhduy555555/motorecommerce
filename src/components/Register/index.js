@@ -85,19 +85,6 @@ const RegisterModal = ({ setShowModal, setShowLoginModal }) => {
                                     <ImLocation className="text-gray-400 m-2" />
                                     <input type="text" name="Address" placeholder="Địa chỉ" className="bg-gray-100 outline-none text-sm ml-2 flex-1" />
                                 </div>
-
-                                {/* Remember Me */}
-                                <div className="flex justify-between w-[80%] mb-5">
-                                    <label className="flex items-center text-xs">
-                                        <input type="checkbox" name="Nhớ mật khẩu" className="mr-1" />
-                                        Nhớ mật khẩu
-                                    </label>
-                                    
-                                    {/* Forgot Password */}
-                                    <a href="#" className="text-xs">
-                                        <span className="italic text-gray-600">Quên mật khẩu ?</span>
-                                    </a>
-                                </div>
                                 <button className="border-2 border-gray-600 text-gray-600 rounded-full px-12 py-2 inline-block font-semibold hover:bg-gray-600 hover:text-white">Đăng nhập</button>
                             </div>
                         </div>
