@@ -12,10 +12,11 @@ export default function Home() {
         <title>Motorcycle Ecommerce</title>
       </Head>
       <main
-        className={`flex min-h-screen flex-col items-center justify-between  ${inter.className}`}
+        style={{zIndex:"-1",width:'100%'}}
       >
         <SlideHome/>
-        <h1 style={{ fontSize:'32px' }} > Sản Phẩm Nổi Bật </h1>
+        <h1 style={{ fontSize:'32px', textAlign:'center' , backgroundColor:"red"}} > Sản Phẩm Nổi Bật </h1>
+        <div style={{display:"flex",justifyContent:"center",alignItems:"center"}} >
         <ul className="home_product" style={{width:'1200px',display:'flex',flexWrap:'wrap',margin:"20px  -4px 0 "}} >
           <Prodcuct/>
           <Prodcuct/>
@@ -26,6 +27,7 @@ export default function Home() {
           <Prodcuct/>
           <Prodcuct/>
         </ul>
+        </div>
       </main>
     </div>
   );

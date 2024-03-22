@@ -8,6 +8,7 @@ function SlideHome() {
         autoplay={false}
         onChange={function noRefCheck(){}}
         onStartChange={function noRefCheck(){}}
+        style={{wight:'100%'}}
       >
         <div className="each-slide-effect">
           <div

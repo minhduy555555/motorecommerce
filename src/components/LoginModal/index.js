@@ -5,7 +5,7 @@ import { FaUser } from "react-icons/fa";
 
 const LoginModal = ({ setShowModal, setShowRegisterModal}) => {
     return (
-        <div id="wrapper" className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center" onClick={() => setShowModal(false)}>
+        <div id="wrapper" style={{zIndex:'99'}} className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center" onClick={() => setShowModal(false)}>
             <div className="flex flex-col w-[600px] items-center flex-1 px-20 text-center">
                 <div className="bg-white rounded-2xl shadow-2xl flex w-2/3 max-w-4xl">
                     {/* Login Section */}

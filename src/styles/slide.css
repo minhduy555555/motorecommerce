@@ -7,8 +7,9 @@
     width: 100%;
   }
 .react-slideshow-container{
-  width: 1440px;
+  width: 100%;
   height: 100%;
+  z-index: 1;
 }
   .each-slide-effect span {
     padding: 20px;

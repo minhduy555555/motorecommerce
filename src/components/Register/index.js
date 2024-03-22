@@ -7,7 +7,7 @@ import { ImLocation } from "react-icons/im";
 const RegisterModal = ({ setShowModal, setShowLoginModal }) => {
     // if (!isvisible) return null
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center" onClick={() => setShowModal(false)}>
+        <div  style={{zIndex:'99'}} className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center" onClick={() => setShowModal(false)}>
             <div className="flex flex-col w-[600px] items-center flex-1 px-20 text-center">
                 <div className="bg-white rounded-2xl shadow-2xl flex w-2/3 max-w-4xl">
                     
