@@ -1,0 +1,18 @@
+.each-slide-effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 350px;
+    width: 100%;
+  }
+.react-slideshow-container{
+  width: 1440px;
+  height: 100%;
+}
+  .each-slide-effect span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+  }
