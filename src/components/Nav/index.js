@@ -20,7 +20,7 @@ export default function Nav({ setShowLoginModal, setShowRegisterModal }) {
         <>
             <div  className="grid w-full place-items-center rounded-lg p-6 lg:overflow-visible">
                 <div className="-m-7 max-h-[768px] w-[calc(100%+48px)]">
-                    <nav className="sticky top-0 z-10 block w-full max-w-full px-4 py-3 text-white dark:bg-gray-600 rounded-none shadow-md h-max border-white/80 bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4">
+                    <nav className="sticky top-0 z-10 block w-full max-w-full px-4 py-3 text-white bg-[#2B92E4] rounded-none shadow-md h-max border-white/80 bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4">
                         <div className="flex items-center justify-between text-blue-gray-900">
                             <Link
                                 href={"/"}
@@ -52,7 +52,7 @@ export default function Nav({ setShowLoginModal, setShowRegisterModal }) {
                             <div className="flex items-center gap-4">
                                 <div className="flex items-center gap-x-5">
                                     {/* Motorcycle */}
-                                    <Link href={"#"}>
+                                    <Link href={"/ProductPage"}>
                                         <button
                                             className="hidden px-4 py-3 font-sans text-xs font-bold text-center text-white uppercase align-middle transition-all rounded-lg select-none hover:bg-gray-900/10 active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
                                             type="button"
