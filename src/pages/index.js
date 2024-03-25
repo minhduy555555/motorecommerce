@@ -11,22 +11,27 @@ export default function Home() {
       <Head>
         <title>Motorcycle Ecommerce</title>
       </Head>
-      <main
-        style={{zIndex:"-1",width:'100%'}}
-      >
+      <main style={{zIndex:"-1"}}>
+        {/* Slide Show */}
         <SlideHome/>
-        <h1 style={{ fontSize:'32px', textAlign:'center' , backgroundColor:"red"}} > Sản Phẩm Nổi Bật </h1>
+
+        {/* Title Product Showcase */}
+        <div style={{textAlign:'center' , backgroundColor:"#2B92E4"}}>
+          <h1 style={{ fontSize:'32px', textAlign:'center', fontColor:'#000', fontWeight:'bold'}} > Sản Phẩm Nổi Bật </h1>
+        </div>
+        
+        {/* Product Showcase */}
         <div style={{display:"flex",justifyContent:"center",alignItems:"center"}} >
-        <ul className="home_product" style={{width:'1200px',display:'flex',flexWrap:'wrap',margin:"20px  -4px 0 "}} >
-          <Prodcuct/>
-          <Prodcuct/>
-          <Prodcuct/>
-          <Prodcuct/>
-          <Prodcuct/>
-          <Prodcuct/>
-          <Prodcuct/>
-          <Prodcuct/>
-        </ul>
+          <ul className="home_product" style={{width:'1200px', display:'flex',flexWrap:'wrap', margin:"20px -4px 0 "}} >
+            <Prodcuct />
+            <Prodcuct />
+            <Prodcuct />
+            <Prodcuct />
+            <Prodcuct />
+            <Prodcuct />
+            <Prodcuct />
+            <Prodcuct />
+          </ul>
         </div>
       </main>
     </div>
