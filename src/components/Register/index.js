@@ -29,35 +29,26 @@ const RegisterModal = ({ setShowModal, setShowLoginModal }) => {
                     {/* Login Section */}
                     <div className="w-3/4 p-5 relative">
                         {/* Close Button */}
-                        <button onClick={() => setShowModal(false)} className="absolute top-0 right-0 mt-1 mr-4 text-red text-xl"> x </button>
+                        <button onClick={() => setShowModal(false)} className="absolute top-0 right-0 mt-1 mr-4 text-red text-xl text-black"> x </button>
                         <div className="text-left font-bold">
                             <span className="text-[#2B92E4]">Motorbike</span> Ecommerce
                         </div>
                         <div className="py-10">
                             <h2 className="text-3xl font-bold text-gray-600 mb-2">Đăng ký</h2>
                             <div className="border-2 w-10 border-gray-600 inline-block mb-2"></div>
-                            {/* <div className="flex justify-center my-2">
-                                <a href="#" className="border-2 border-gray-200 rounded-full p-3 mx-1">
-                                    <FaFacebookF className="text-sm"/>
-                                </a>
-
-                                <a href="#" className="border-2 border-gray-200 rounded-full p-3 mx-1">
-                                    <FaGoogle className="text-sm"/>
-                                </a>
-                            </div> */}
                             <p className="text-gray-400 my-3">Tạo tài khoản</p>
 
                             <div className="flex flex-col items-center">
                                 {/* Username Field */}
                                 <div className="bg-gray-100 w-[80%] p-2 flex items-center mb-3">
                                     <FaUser className="text-gray-400 m-2" />
-                                    <input type="text" name="FullName" placeholder="Họ và tên" className="bg-gray-100 outline-none text-sm ml-2 flex-1" />
+                                    <input type="text" name="FullName" placeholder="Họ và tên(*)" className="bg-gray-100 outline-none text-sm ml-2 flex-1" />
                                 </div>
                                 
                                 {/* Phone number Field */}
                                 <div className="bg-gray-100 w-[80%] p-2 flex items-center mb-3">
                                     <MdEmail className="text-gray-400 m-2" />
-                                    <input type="email" name="Email" placeholder="Email" pattern="[0-9]" inputMode="numeric" className="bg-gray-100 outline-none text-sm ml-2 flex-1" />
+                                    <input type="email" name="Email" placeholder="Email(*)" pattern="[0-9]" inputMode="numeric" className="bg-gray-100 outline-none text-sm ml-2 flex-1" />
                                 </div>
 
                                 {/* Username Field */}
@@ -69,25 +60,25 @@ const RegisterModal = ({ setShowModal, setShowLoginModal }) => {
                                 {/* Username Field */}
                                 <div className="bg-gray-100 w-[80%] p-2 flex items-center mb-3">
                                     <FaUser className="text-gray-400 m-2" />
-                                    <input type="text" name="Username" placeholder="Tên đăng nhập" className="bg-gray-100 outline-none text-sm ml-2 flex-1" />
+                                    <input type="text" name="Username" placeholder="Tên đăng nhập(*)" className="bg-gray-100 outline-none text-sm ml-2 flex-1" />
                                 </div>
 
                                 {/* Password Field */}
                                 <div className="bg-gray-100 w-[80%] p-2 flex items-center mb-4">
                                     <MdLockOutline className="text-gray-400 m-2" />
-                                    <input type="password" name="Password" placeholder="Mật khẩu" className="bg-gray-100 outline-none text-sm ml-2 flex-1" />
+                                    <input type="password" name="Password" placeholder="Mật khẩu(*)" className="bg-gray-100 outline-none text-sm ml-2 flex-1" />
                                 </div>
 
                                 {/* Confirm password Field */}
                                 <div className="bg-gray-100 w-[80%] p-2 flex items-center mb-4">
                                     <MdLockOutline className="text-gray-400 m-2" />
-                                    <input type="password" name="Confirm password" placeholder="Nhập lại mật khẩu" className="bg-gray-100 outline-none text-sm ml-2 flex-1" />
+                                    <input type="password" name="ConfirmPassword" placeholder="Nhập lại mật khẩu(*)" className="bg-gray-100 outline-none text-sm ml-2 flex-1" />
                                 </div>
                                 
                                 {/* Address Field */}
                                 <div className="bg-gray-100 w-[80%] p-2 flex items-center mb-3">
                                     <ImLocation className="text-gray-400 m-2" />
-                                    <input type="text" name="Address" placeholder="Địa chỉ" className="bg-gray-100 outline-none text-sm ml-2 flex-1" />
+                                    <input type="text" name="Address" placeholder="Địa chỉ(*)" className="bg-gray-100 outline-none text-sm ml-2 flex-1" />
                                 </div>
                                 <button className="border-2 border-[#2B92E4] text-[#2B92E4] rounded-full px-12 py-2 inline-block font-semibold hover:bg-[#2B92E4] hover:text-white">Đăng ký</button>
                             </div>

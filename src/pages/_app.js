@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
   
   return (
     <Provider>
-      <div className="flex flex-col min-h-screen"> {/* Áp dụng các class của Tailwind CSS */}
+      <div className="flex flex-col min-h-screen">
         <Nav 
           setShowLoginModal={setShowLoginModal}
           setShowRegisterModal={setShowRegisterModal}

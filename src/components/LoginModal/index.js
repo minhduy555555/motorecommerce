@@ -57,7 +57,8 @@ const LoginModal = ({ setShowModal, setShowRegisterModal}) => {
 
                     {/* Register Section */}
                     <div className="w-2/4 py-36 px-12 bg-[#2B92E4] text-white rounded-tr-2xl rounded-br-2xl relative">
-                    <button onClick={() => setShowModal(false)} className="absolute top-0 right-0 mt-1 mr-4 text-white text-xl"> x </button>
+                        {/* Close Button */}
+                    <button onClick={() => setShowModal(false)} className="absolute top-0 right-0 mt-1 mr-4 text-black text-xl"> x </button>
                         <h2 className="font-bold text-3xl mb-2">Đăng ký</h2>
                         <div className="border-2 w-10 border-white inline-block mb-2"></div>
                         <p className="mb-10">Bạn chưa có tài khoản ?</p>
