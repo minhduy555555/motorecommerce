@@ -52,14 +52,14 @@ export default function Nav({ setShowLoginModal, setShowRegisterModal }) {
                             <div className="flex items-center gap-4">
                                 <div className="flex items-center gap-x-5">
                                     {/* Motorcycle */}
-                                    <Link href={"#"}>
+                                    {/* <Link href={"/ProductPage"}>
                                         <button
                                             className="hidden px-4 py-3 font-sans text-xs font-bold text-center text-white uppercase align-middle transition-all rounded-lg select-none hover:bg-gray-900/10 active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
                                             type="button"
                                         >
                                             <span>Xe máy</span>
                                         </button>
-                                    </Link>
+                                    </Link> */}
 
                                     {/* Accessary */}
                                     <Link href={"#"}>

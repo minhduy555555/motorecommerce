@@ -12,7 +12,7 @@ export default function Home() {
         <title>Motorcycle Ecommerce</title>
       </Head>
       <main
-        style={{zIndex:"-1",width:'100%'}}
+        style={{width:'100%'}}
       >
         <SlideHome/>
         <h1 style={{ fontSize:'32px', textAlign:'center' , backgroundColor:"red"}} > Sản Phẩm Nổi Bật </h1>

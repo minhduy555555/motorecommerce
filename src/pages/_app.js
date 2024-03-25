@@ -9,7 +9,6 @@ import '@/styles/product.css'
 import '@/styles/footer.css'
 import Footer from "@/components/footer";
 
-
 function MyApp({ Component, pageProps }) {
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showRegisterModal, setShowRegisterModal] = useState(false);
