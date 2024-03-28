@@ -3,40 +3,33 @@ import { IoMdMail } from "react-icons/io";
 import { GoClockFill } from "react-icons/go";
 
 function Footer() {
-  return (
-    <div className="footer">
-      <ul className="footer-list">
-        <li className="footer-name">Company</li>
-        <li className="footer-items">Ducati</li>
-        <li className="footer-items">Honda</li>
-        <li className="footer-items">Yamaha</li>
-        <li className="footer-items">Kawasaki</li>
-      </ul>
+    return (
+        <div className="bg-blue-800 py-16 px-28 flex">
+            <ul className="w-1/3">
+                <li className="text-white text-2xl pb-5">Danh mục các hãng</li>
+                <li className="text-white text-base leading-8 pb-4 flex"><a href="/#">Honda</a></li>
+                <li className="text-white text-base leading-8 pb-4 flex"><a href="/#">Ducati</a></li>
+                <li className="text-white text-base leading-8 pb-4 flex"><a href="/#">Kawasaki</a></li>
+                <li className="text-white text-base leading-8 pb-4 flex"><a href="/#">Yamaha</a></li>
+            </ul>
 
-      <ul className="footer-list">
-        <li className="footer-name">Page</li>
-        <li className="footer-items">Trang Chủ</li>
-        <li className="footer-items">Xe Máy</li>
-        <li className="footer-items">Phụ Tùng Dịch Vụ</li>
-        <li className="footer-items">Liên Hệ </li>
-        <li className="footer-items">Giỏ Hàng </li>
-      </ul>
+            <ul className="w-1/3">
+                <li className="text-white text-2xl pb-5">Danh mục các trang</li>
+                <li className="text-white text-base leading-8 pb-4 flex"><a href="/">Trang Chủ</a></li>
+                <li className="text-white text-base leading-8 pb-4 flex"><a href="/#">Xe Máy</a></li>
+                <li className="text-white text-base leading-8 pb-4 flex"><a href="/#">Phụ Tùng</a></li>
+                <li className="text-white text-base leading-8 pb-4 flex"><a href="/#">Dịch vụ</a></li>
+            </ul>
 
-      <ul className="footer-list">
-        <li className="footer-name"></li>
-        <li className="footer-items">
-          <FaHome style={{fontSize:'24px'}} /> <span className="footer-icon" > Đại Lộ Khoa Học </span>{" "}
-        </li>
-        <li className="footer-items">
-          <IoMdMail style={{fontSize:'24px'}} /> <span className="footer-icon"> motobytes@gmail.com </span>{" "}
-        </li>
-        <li className="footer-items">
-          <FaPhoneAlt style={{fontSize:'24px'}} /> <span className="footer-icon">0905956979</span>{" "}
-        </li>
-        <li className="footer-items"><GoClockFill style={{fontSize:'24px'}} /> <span className="footer-icon" >24/7</span> </li>
-      </ul>
-    </div>
-  );
+            <ul className="w-1/3">
+                <li className="text-white text-2xl pb-5">Liên hệ</li>
+                <li className="text-white text-base leading-8 pb-4 flex items-center"><FaHome className="text-3xl" />Đại Lộ Khoa Học, TP. Quy Nhơn</li>
+                <li className="text-white text-base leading-8 pb-4 flex items-center"><IoMdMail className="text-3xl" />motobikes@gmail.com</li>
+                <li className="text-white text-base leading-8 pb-4 flex items-center"><FaPhoneAlt className="text-3xl" />0123456789</li>
+                <li className="text-white text-base leading-8 pb-4 flex items-center"><GoClockFill className="text-3xl" /><span className="pl-2">08:00 AM - 17:30 PM</span></li>
+            </ul>
+        </div>
+    );
 }
 
 export default Footer;

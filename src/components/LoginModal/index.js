@@ -1,5 +1,5 @@
-import React from 'react';
-// import { FaFacebookF, FaGoogle, FaUser } from "react-icons/fa";
+import React, { useState } from 'react';
+import { auth_login } from '@/pages/api/auth';
 import { MdLockOutline } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
 
@@ -8,6 +8,22 @@ const LoginModal = ({ setShowModal, setShowRegisterModal}) => {
     const handleClose = (e) => {
         if (e.target.id === "modal-wrapper") {
             setShowModal(false);
+        }
+    };
+
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+
+    // Handle Submit Login
+    const handleLogin = async (e) => {
+        e.preventDefault();
+        const result = await auth_login(username, password);    
+        if (result.success) {
+            alert('Đăng nhập thành công!');
+            setShowModal(false);
+        } else {
+            // Login failed
+            alert(result.message || 'Đăng nhập thất bại!');
         }
     };
 
@@ -29,13 +45,13 @@ const LoginModal = ({ setShowModal, setShowRegisterModal}) => {
                             <div className="flex flex-col items-center">
                                 <div className="bg-gray-100 w-[80%] p-2 flex items-center mb-3">
                                     <FaUser className="text-gray-400 m-2" />
-                                    <input type="text" name="Tên đăng nhập" placeholder="Tên đăng nhập" className="bg-gray-100 outline-none text-sm ml-2 flex-1" />
+                                    <input type="text" name="Tên đăng nhập" placeholder="Tên đăng nhập" className="bg-gray-100 outline-none text-sm ml-2 flex-1" onChange={(e) => setUsername(e.target.value)} />
                                 </div>
                                 
                                 {/* Password Field */}
                                 <div className="bg-gray-100 w-[80%] p-2 flex items-center mb-4">
                                     <MdLockOutline className="text-gray-400 m-2" />
-                                    <input type="password" name="Mật khẩu" placeholder="Mật khẩu" className="bg-gray-100 outline-none text-sm ml-2 flex-1" />
+                                    <input type="password" name="Mật khẩu" placeholder="Mật khẩu" className="bg-gray-100 outline-none text-sm ml-2 flex-1" onChange={(e) => setPassword(e.target.value)} />
                                 </div>
 
                                 {/* Remember Me */}
@@ -50,7 +66,7 @@ const LoginModal = ({ setShowModal, setShowRegisterModal}) => {
                                         <span className="italic text-gray-600">Quên mật khẩu ?</span>
                                     </a>
                                 </div>
-                                <a href="#" className="border-2 border-[#2B92E4] text-[#2B92E4] rounded-full px-12 py-2 inline-block font-semibold hover:bg-[#2B92E4] hover:text-white">Đăng nhập</a>
+                                <button type="submit" onClick={handleLogin} className="border-2 border-[#2B92E4] text-[#2B92E4] rounded-full px-12 py-2 inline-block font-semibold hover:bg-[#2B92E4] hover:text-white">Đăng nhập</button>
                             </div>
                         </div>
                     </div>
